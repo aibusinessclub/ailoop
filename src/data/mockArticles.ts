@@ -98,12 +98,18 @@ This transformation doesn't mean the end of human developers—instead, it eleva
   },
 ];
 
+import neonAi from '@/assets/icons/neon-ai.png';
+import neonDev from '@/assets/icons/neon-dev.png';
+import neonDesign from '@/assets/icons/neon-design.png';
+import neonCloud from '@/assets/icons/neon-cloud.png';
+import neonStartup from '@/assets/icons/neon-startup.png';
+
 export const categories = [
-  { slug: 'ai', name: 'AI & Machine Learning', icon: '🤖', description: 'Latest in artificial intelligence and ML' },
-  { slug: 'dev-tools', name: 'Developer Tools', icon: '🛠️', description: 'Frameworks, libraries, and dev tools' },
-  { slug: 'design', name: 'Design & UX', icon: '🎨', description: 'UI/UX trends and best practices' },
-  { slug: 'cloud', name: 'Cloud & Infrastructure', icon: '☁️', description: 'Cloud platforms and architecture' },
-  { slug: 'startups', name: 'Startups & Products', icon: '🚀', description: 'Building and scaling products' },
+  { slug: 'ai', name: 'AI & Machine Learning', icon: neonAi, description: 'Latest in artificial intelligence and ML' },
+  { slug: 'dev-tools', name: 'Developer Tools', icon: neonDev, description: 'Frameworks, libraries, and dev tools' },
+  { slug: 'design', name: 'Design & UX', icon: neonDesign, description: 'UI/UX trends and best practices' },
+  { slug: 'cloud', name: 'Cloud & Infrastructure', icon: neonCloud, description: 'Cloud platforms and architecture' },
+  { slug: 'startups', name: 'Startups & Products', icon: neonStartup, description: 'Building and scaling products' },
 ];
 
 export const labEntries = [
