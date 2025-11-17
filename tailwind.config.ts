@@ -89,6 +89,16 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      dropShadow: {
+        glow: [
+          "0 0px 20px rgba(255,255, 255, 0.35)",
+          "0 0px 65px rgba(255, 255,255, 0.2)"
+        ],
+        neon: [
+          "0 0 20px rgba(0, 229, 255, 0.8)",
+          "0 0 40px rgba(0, 229, 255, 0.5)"
+        ]
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

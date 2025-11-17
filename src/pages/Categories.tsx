@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { categories } from '@/data/mockArticles';
+import { NeonCategoryIcon } from '@/components/NeonCategoryIcon';
 import { ArrowRight } from 'lucide-react';
 
 const Categories = () => {
@@ -20,8 +21,8 @@ const Categories = () => {
               to={`/category/${category.slug}`}
               className="group block p-8 rounded-xl border border-border bg-card shadow-editorial hover:shadow-editorial-hover transition-smooth hover:-translate-y-1"
             >
-              <div className="space-y-4">
-                <div className="text-4xl">{category.icon}</div>
+              <div className="space-y-4 flex flex-col items-center text-center">
+                <NeonCategoryIcon src={category.icon} alt={category.name} />
                 <h2 className="text-2xl font-semibold text-heading group-hover:text-accent transition-smooth">
                   {category.name}
                 </h2>

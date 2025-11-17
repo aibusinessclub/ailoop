@@ -85,6 +85,9 @@ All colors MUST be HSL.
     --meta-text: 220 10% 55%;
     --shadow-soft: 220 20% 5%;
     --overlay: 220 20% 5%;
+    
+    /* Neon effects for dark mode */
+    --neon-cyan: 180 100% 60%;
   }
 }
 

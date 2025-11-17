@@ -2,6 +2,7 @@ import { useLocale } from '@/contexts/LocaleContext';
 import { mockArticles, categories } from '@/data/mockArticles';
 import { HeroArticle } from '@/components/HeroArticle';
 import { ArticleCard } from '@/components/ArticleCard';
+import { NeonCategoryIcon } from '@/components/NeonCategoryIcon';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
@@ -39,10 +40,10 @@ const Home = () => {
               <Link
                 key={category.slug}
                 to={`/category/${category.slug}`}
-                className="group block p-6 rounded-lg border border-border bg-card shadow-editorial hover:shadow-editorial-hover transition-smooth hover:-translate-y-1"
+                className="group block p-8 rounded-lg border border-border bg-card shadow-editorial hover:shadow-editorial-hover transition-smooth hover:-translate-y-1"
               >
-                <div className="space-y-3">
-                  <div className="text-3xl">{category.icon}</div>
+                <div className="space-y-4 flex flex-col items-center text-center">
+                  <NeonCategoryIcon src={category.icon} alt={category.name} />
                   <h3 className="text-xl font-semibold text-heading group-hover:text-accent transition-smooth">
                     {category.name}
                   </h3>
